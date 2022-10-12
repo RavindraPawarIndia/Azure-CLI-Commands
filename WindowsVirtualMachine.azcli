@@ -1,0 +1,16 @@
+# Create a windows virtual machine 
+az vm create \
+--name MyWinVM \
+--resource-group myrg \
+--location eastus
+--admin-username winuser \
+--image Win2019Datacenter \
+--size Standard_D2s_v3 \
+--public-ip-sku Standard \
+--vnet-name myvnet \
+--subnet subnetA
+
+
+# List all VM sizes in a location 
+az vm list-sizes \
+--location eastus 

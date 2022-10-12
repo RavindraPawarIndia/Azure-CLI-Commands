@@ -1,0 +1,5 @@
+# Create an app service plan
+az appservice plan create \
+--name myapp-plan \
+--resource-group myrg \
+--sku F1

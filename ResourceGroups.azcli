@@ -1,0 +1,24 @@
+# Create a resource group 
+az group create \
+--name myrg \
+--lcoation westus
+
+
+# Delete a resource group 
+az group delete \
+--name myrg \
+
+
+# Delete all VMs in a resource group 
+az group delete \
+--name myrg \
+--force-deletion-types Microsoft.Compute/virtualMachines
+
+
+# List the resource groups in your subscription in tabular format
+az group list -o table
+
+
+# To get one particular resource group 
+az group show \
+--name myrg 

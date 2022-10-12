@@ -1,0 +1,8 @@
+# Create Azure VMSS 
+az vmss create \
+--name mywinvmss \
+--resource-group myrg \
+--admin-username adminuser \
+--img Win2019Datacenter \
+--vm-sku Standard_DS2_v2 \
+--instance-count 2

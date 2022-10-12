@@ -1,0 +1,4 @@
+# Create a subnet
+az netwrok vnet subnet create \
+--name subnetA \
+--address-prefixes 10.0.1.0/24

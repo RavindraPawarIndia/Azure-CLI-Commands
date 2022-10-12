@@ -1,0 +1,16 @@
+# Creaet a VNET
+az network vnet create \
+--name myvnet \
+--resource-group myrg \
+--subnet-name subnetA \
+--address-prefixes 10.0.0.0/16
+
+
+# List VNETs in a tabular format
+az network vnet list -o table
+
+
+# See the details of a VNET
+az network vnet show \
+--resource-group myrg \
+--name myvnet

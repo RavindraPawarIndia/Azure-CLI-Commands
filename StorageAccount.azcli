@@ -1,0 +1,6 @@
+# Create a storage account 
+az storage account create \
+--name myuniquestact100100 \
+--resource-group myrg \
+--kind StorageV2 \
+--sku Standard_LRS

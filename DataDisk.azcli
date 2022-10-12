@@ -1,0 +1,21 @@
+# Create a vm data disk 
+az disk create \
+--name data-disk \
+--resource-group myrg \
+--location eastus \
+--size-gb 16
+
+
+# Attach a data disk to an existing VM 
+$id=(
+    az disk show \
+    --name data-disk \
+    --resource-group myrg \
+    --query id
+)
+
+az vm disk attach \
+--vm-name MyWinVM \
+--resource-group myrg \
+--lun 0 \
+--ids $id

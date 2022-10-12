@@ -1,0 +1,10 @@
+# Create a linux virtual machine 
+az vm create \
+--name MyWinVM \
+--resource-group myrg \
+--location eastus
+--image UbuntuLTS \
+--size Standard_D2s_v3 \
+--public-ip-sku Standard \
+--vnet-name myvnet \
+--subnet subnetA
